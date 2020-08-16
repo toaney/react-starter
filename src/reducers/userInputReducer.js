@@ -1,8 +1,7 @@
 //initialize initial state for Reducer
 const INITIAL_STATE = {
     userInput: "",
-    quotes: [
-    ]
+    quotes: ""
 }
 
 //declare userInputReducer
@@ -19,7 +18,7 @@ const userInputReducer = (state = INITIAL_STATE, action) => {
             return{
                 //create copy of current state and update userInput value
                 ...state,
-                quotes: [...state.quotes, action.formValues]
+                quotes: action.formValues
             }
 
         default:

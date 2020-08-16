@@ -87,15 +87,11 @@ const ReduxStateExample = ({dispatch, userInput, quotes}) => {
                     <th>Number of Years</th>
                     <th>Monthly Payment</th>
                   </tr>
-                  { userQuotes.map((currentQuote) => {
-                    return(
-                      <tr>
-                        <td>{currentQuote.principalInput}</td>
-                        <td>{currentQuote.interestInput}</td>
-                        <td>{currentQuote.durationInput}</td>
-                      </tr>
-                    );
-                  })}
+                  <tr>
+                    <td>{quotes.principalInput}</td>
+                    <td>{quotes.interestInput}</td>
+                    <td>{quotes.durationInput}</td>
+                  </tr>
                 </table>
               </div>
             ) : (
